@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h1>Temperature Conversion</h1>
+        <div class="input-group">
+            <input id=InputValue required="" type="text" name="text" autocomplete="off" class="input">
+            <label for="InputValue" class="user-label">Enter Value</label>
+          </div>
+        <br><small style="background-color: black; color: white; padding:2px;">Select Conversion Unit</small><br>
+        
+        <input type="radio" name="unit" id="tofarenheit">
+        <label for="tofarenheit">Celsius to Farenheight</label> <br>
+
+        <input type="radio" name="unit" id="tocelsius">
+        <label for="tocelsius">Farenheight to Celsius</label><br><br>
+
+        <button type="button" onclick="convert()">CONVERT</button><br>
+        <div class="center">
+            <p style="font-size: 1.5em; color: rgb(8, 215, 187);">Your answer is:</p>
+            <p id="ConAnswer" style="font-size: 2.5em; width: 150px; ;font-weight: 900;"></p>
+            <img src="https://media1.tenor.com/m/5Cl7q5ia7RcAAAAC/elmo-elmos-fire.gif" alt="hot" id="hot" class="hot" style="width: 400px;">
+            <img src="https://media1.tenor.com/m/JY5Ozc2mQYMAAAAC/frozen-freezing.gif" alt="cold" id="cold" class="cold" style="width: 500px;">
+            <img src="https://media1.tenor.com/m/eTbJr4AB0pYAAAAd/a-normal-day-chick.gif" alt="normal" id="normal" class="normal" style="width: 500px;">
+        </div> 
+               
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
